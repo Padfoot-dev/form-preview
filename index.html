@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Registration Form</title>
+</head>
+<body>
+ <div class="container">
+    <div class="header">
+        <h1>Registration Form</h1>
+    </div>
+    
+    <div class="form-container">
+        <form action="" class="form" >
+            <div class="form-element">
+                <label for="username">Username : </label>
+                <input type="text" name="username" id="username">
+            </div>
+    
+    
+            <div class="form-element" id="gender">
+                <label for="">Gender </label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+    
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+    
+                <input type="radio" id="others" name="gender" value="others">
+                <label for="others">Others</label>
+    
+            </div>
+    
+            <div class="form-element">
+                <label for="report">Reporting to : </label>
+    
+                <select name="reporting to" id="report">
+                    <option value="Team Leader">Team Leader</option>
+                    <option value="Team Member 1">Team Member 1</option>
+                    <option value="Team Member 2">Team Member 2</option>
+                    <option value="Team Member 3">Team Member 3</option>
+                </select>
+            </div>
+    
+            <div class="form-element">
+                <label for="country">country : </label>
+    
+                <select name="country" id="country">
+                    <option value="Japan">Japan</option>
+                    <option value="South Korea">South Korea</option>
+                    <option value="New Zealand">New Zealand</option>
+                    <option value="Qatar">Qatar</option>
+                </select>
+            </div>
+    
+            <div class="form-element">
+                <label for="email">Email : </label>
+                <input type="email" name="email" id="email">
+            </div>
+    
+            <div class="form-element">
+                <label for="address">Enter your address : </label> <br> <br>
+                <textarea name="address" id="address" cols="30" rows="10"></textarea>
+            </div>
+    
+            <div class="form-element">
+                <label for="password">Password : </label>
+                <input type="password" name="password" id="password">
+            </div>
+    
+            <div class="form-element" id="verification">
+                <label for="">Verification : </label>
+                <input type="checkbox" id="trained" name="Verification" value="trained">
+                <label for="trained">Trained</label>
+                <input type="checkbox" id="licensed" name="Verification" value="licensed">
+                <label for="licensed">Licensed</label>
+                <input type="checkbox" id="approved" name="Verification" value="approved">
+                <label for="approved">Approved</label>
+            </div>
+    
+            <div class="form-element" id="acceptance">
+                <label for="acceptance">Accept to all terms and Conditions : </label>
+                <input type="checkbox" id="acceptance" name="acceptance" value="agreed" required>
+            </div>
+    
+            <button id="btn"  class="btn" type="submit">Submit</button>
+        <script src="./app.js"> </script>
+        </form>
+    </div>
+
+    <div class="table-container">
+
+        <table id="table">
+            <tr>
+                <th>Username</th>
+                <th>Gender</th>
+                <th>Reporting To</th>
+                <th>Country</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Verification</th>
+                <th>Acceptance</th>
+            </tr>
+
+            <tr id="result">
+
+            </tr>
+
+        </table>
+
+    </div>
+ </div>
+</body>
+</html>
